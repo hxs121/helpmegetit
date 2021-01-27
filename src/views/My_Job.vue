@@ -1,13 +1,15 @@
 <template>
   <div>
-  <router-view/>
+    myjob
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'Home',
-
+  name: "My_Job"
 }
 </script>
+
+<style scoped>
+
+</style>

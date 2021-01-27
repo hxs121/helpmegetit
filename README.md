@@ -1,4 +1,4 @@
-# helpmegetit
+# helpmegetit这是一个校园代拿应用，正在完善
 
 ## Project setup
 ```

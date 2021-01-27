@@ -1,13 +1,15 @@
 <template>
   <div>
-  <router-view/>
+    <button>111</button>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'Home',
-
+name: "Address"
 }
 </script>
+
+<style scoped>
+
+</style>
