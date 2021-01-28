@@ -1,5 +1,7 @@
-# helpmegetit这是一个校园代拿应用，正在完善
-
+# helpmegetit这是一个校园代拿应用前端部分，正在完善
+```
+使用vue+vuex+museui
+```
 ## Project setup
 ```
 npm install
