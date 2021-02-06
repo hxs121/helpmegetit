@@ -15,53 +15,6 @@ Vue.use(MuseUI);
 
 Vue.use(VueRouter)
 
-// const routes = [
-//     {
-//         path: '/',
-//         name: 'help_center',
-//         component: () => import('../views/Help_Center.vue')
-//     },
-//     {
-//         path: '/run_center',
-//         name: 'run_center',
-//         component: () => import('../views/Job_Offer.vue')
-//     },
-//     {
-//         path: '/account',
-//         name: 'account',
-//         component: () => import('../views/Account.vue')
-//     },
-//     {
-//         path: '/address',
-//         name: 'address',
-//         component: () => import('../views/Address.vue')
-//     },
-//     {
-//         path: '/help_center',
-//         name: 'help_center',
-//         component: () => import('../views/Help_Center.vue')
-//     },
-//     {
-//         path: '/my_post',
-//         name: 'my_post',
-//         component: () => import('../views/My_Post.vue')
-//     },
-//     {
-//         path: '/my_job',
-//         name: 'my_job',
-//         component: () => import('../views/My_Job.vue')
-//     },
-//     {
-//         path: '/contact',
-//         name: 'contact',
-//         component: () => import('../views/Contact.vue')
-//     },
-//     {
-//         path: '/login',
-//         name: 'login',
-//         component: () => import('../views/Login.vue')
-//     },
-// ]
 
 const router = new VueRouter({
     mode: 'hash',
@@ -115,5 +68,52 @@ const router = new VueRouter({
     ]
 })
 
+// const routes = [
+//     {
+//         path: '/',
+//         name: 'help_center',
+//         component: () => import('../views/Help_Center.vue')
+//     },
+//     {
+//         path: '/run_center',
+//         name: 'run_center',
+//         component: () => import('../views/Job_Offer.vue')
+//     },
+//     {
+//         path: '/account',
+//         name: 'account',
+//         component: () => import('../views/Account.vue')
+//     },
+//     {
+//         path: '/address',
+//         name: 'address',
+//         component: () => import('../views/Address.vue')
+//     },
+//     {
+//         path: '/help_center',
+//         name: 'help_center',
+//         component: () => import('../views/Help_Center.vue')
+//     },
+//     {
+//         path: '/my_post',
+//         name: 'my_post',
+//         component: () => import('../views/My_Post.vue')
+//     },
+//     {
+//         path: '/my_job',
+//         name: 'my_job',
+//         component: () => import('../views/My_Job.vue')
+//     },
+//     {
+//         path: '/contact',
+//         name: 'contact',
+//         component: () => import('../views/Contact.vue')
+//     },
+//     {
+//         path: '/login',
+//         name: 'login',
+//         component: () => import('../views/Login.vue')
+//     },
+// ]
 
 export default router

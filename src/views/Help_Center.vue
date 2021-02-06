@@ -3,7 +3,7 @@
     <ul>
       <li v-for="(item,index) in pageLists"
           :key="index">
-        {{ item.title }}-{{ item.content }}
+        {{ item.title }}-{{ item.content }}-{{item.select}}-{{item.details}}-{{item.timeValue}}-{{item.address}}-{{item.money}}
       </li>
     </ul>
   </div>

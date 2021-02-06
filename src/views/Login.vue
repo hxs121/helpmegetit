@@ -24,7 +24,7 @@
         <mu-form-item label="密码" prop="password" :rules="passwordRules">
           <mu-text-field type="password" v-model="validateForm.password" prop="password"></mu-text-field>
         </mu-form-item>
-        <mu-form-item>
+        <mu-form-item >
           <mu-button color="primary" @click="submit">登录</mu-button>
           <mu-button @click="register">注册</mu-button>
         </mu-form-item>
@@ -84,7 +84,6 @@ export default {
               username: '',
               password: '',
             }
-            this.localStorage.setItem("isLogin","100")
             alert("登录成功！")
             this.$router.push('Account')
           } else if (this.validateForm.username === '') {
