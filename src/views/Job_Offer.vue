@@ -14,7 +14,7 @@
       </mu-form-item>
       <mu-col span="12" lg="4" sm="6">
         <mu-date-input icon="today" type="time" v-model="form.timeValue" clock-type="24hr" label="期望送达时间" actions
-                       label-float format="hh:mm"></mu-date-input>
+                       label-float view-type="list"></mu-date-input>
       </mu-col>
       <mu-form-item prop="input" label="输入您的回馈￥" label-position="top">
         <mu-text-field v-model="form.money" oninput="value=value.replace(/[^\d]/g,'')"></mu-text-field>
@@ -26,7 +26,7 @@
 
 <script>
 import store from '@/store'
-
+import dayjs from 'dayjs'
 export default {
   name: "Job_Offer",
   store,
@@ -50,7 +50,7 @@ export default {
       store.commit('addItem', {
         select: this.form.select,
         details: this.form.details,
-        timeValue: this.form.timeValue,
+        timeValue: dayjs(this.form.timeValue).format('HH:mm'),
         address: this.form.address,
         money: this.form.money
       })
