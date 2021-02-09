@@ -1,11 +1,11 @@
 <template>
-  <mu-paper :z-depth="1" class="demo-list-wrap">
-    <mu-appbar color="green" style="text-align: center">
+  <div>
+    <mu-appbar color="green" style="text-align: center;position: fixed; top:0 ; left: 0; width: 100%;">
       我的接单
+      <mu-button icon type="button" class="back" @click="back()">
+        <mu-icon value="arrow_back" left color="white"></mu-icon>
+      </mu-button>
     </mu-appbar>
-    <mu-button icon type="button" class="back" @click="back()">
-      <mu-icon value="arrow_back" left color="white"></mu-icon>
-    </mu-button>
     <mu-list textline="two-line" v-for="(job,index) in Lists" :key="index">
       <mu-list-item avatar :ripple="false">
         <mu-list-item-content>
@@ -17,7 +17,7 @@
         </mu-list-item-content>
       </mu-list-item>
     </mu-list>
-  </mu-paper>
+  </div>
 </template>
 
 <script>
@@ -43,6 +43,6 @@ export default {
 .back {
   position: absolute;
   left: 2%;
-  top: 0.5%;
+  top: 2%;
 }
 </style>

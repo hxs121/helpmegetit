@@ -3,7 +3,7 @@
     <mu-appbar color="#2196f3" class="head">
       发布任务
     </mu-appbar>
-    <mu-form :model="form" class="mu-demo-form" :label-position="labelPosition" label-width="200">
+    <mu-form :model="form" class="mu-demo-form" :label-position="labelPosition" label-width="200" ref="form">
       <mu-form-item prop="problem" label="需要别人帮您什么？" :rules="problemRule">
         <mu-select v-model="form.problem">
           <mu-option v-for="option , index in options" :key="option" :label="option" :value="option"></mu-option>
@@ -36,6 +36,17 @@ export default {
   store,
   data() {
     return {
+      options: [
+        '拿快递', '拿外卖', '带饭', '代买'
+      ],
+      labelPosition: 'top',
+      form: {
+        problem: '',
+        details: '',
+        timeValue: '',
+        address: '',
+        money: ''
+      },
       problemRule: [
         {validate: (val) => !!val, message: '必须填写'}
       ],
@@ -50,18 +61,7 @@ export default {
       ],
       moneyRule: [
         {validate: (val) => !!val, message: '必须填写'}
-      ],
-      options: [
-        '拿快递', '拿外卖', '带饭', '代买'
-      ],
-      labelPosition: 'top',
-      form: {
-        problem: '',
-        details: '',
-        timeValue: '',
-        address: '',
-        money: ''
-      },
+      ]
     }
   },
   methods: {
@@ -76,6 +76,7 @@ export default {
             money: this.form.money
           })
           this.$router.push('help_center')
+          alert("发布成功！")
         }
       })
     }

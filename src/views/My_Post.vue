@@ -1,13 +1,13 @@
 <template>
-  <mu-paper :z-depth="1" class="demo-list-wrap">
-    <mu-appbar color="#ffcd38" style="text-align: center">
+  <div>
+    <mu-appbar color="#ffcd38" style="text-align: center;position: fixed; top:0 ; left: 0; width: 100%;">
       我的发布
+      <mu-button icon type="button" class="back" @click="back()">
+        <mu-icon value="arrow_back" left color="white"></mu-icon>
+      </mu-button>
     </mu-appbar>
-    <mu-button icon type="button" class="back" @click="back()">
-      <mu-icon value="arrow_back" left color="white"></mu-icon>
-    </mu-button>
     <mu-list textline="two-line" v-for="(item,index) in pageLists" :key="index">
-      <mu-list-item avatar :ripple="false" >
+      <mu-list-item avatar :ripple="false">
         <mu-list-item-content>
           <mu-list-item-title>帮忙{{ item.problem }}</mu-list-item-title>
           <mu-list-item-sub-title>
@@ -20,15 +20,16 @@
       </mu-list-item>
       <mu-divider></mu-divider>
     </mu-list>
-  </mu-paper>
+  </div>
 </template>
 
 <script>
 import store from '@/store'
+
 export default {
-  name: "Mypost",
+  name: "My_post",
   store,
-  computed:{
+  computed: {
     pageLists() {
       return store.state.lists
     }
@@ -45,6 +46,6 @@ export default {
 .back {
   position: absolute;
   left: 2%;
-  top: 0.5%;
+  top: 5%;
 }
 </style>
