@@ -6,13 +6,20 @@
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
+##Muse-ui安装
+```
+npm i muse-ui -S
+```
+##dayjs安装
+```
+npm install dayjs
+```
+### 运行
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 编译
 ```
 npm run build
 ```
