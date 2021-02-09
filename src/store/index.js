@@ -10,10 +10,15 @@ Vue.use(Vuex)
 export default new Vuex.Store({
     state: {
         lists: [],
+        jobs:[]
+
     },
     mutations: {
         addItem(state, value) {
             state.lists.push(value)
+        },
+        myAddJob(state, value){
+            state.jobs.push(value)
         }
     },
     actions: {},

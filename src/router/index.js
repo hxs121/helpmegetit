@@ -3,7 +3,6 @@ import VueRouter from 'vue-router'
 import Account from "@/views/Account";
 import Run_Center from "@/views/Job_Offer";
 import Help_Center from "@/views/Help_Center";
-import Address from "@/views/Address";
 import My_Post from "@/views/My_Post";
 import My_Job from "@/views/My_Job";
 import Contact from "@/views/Contact";
@@ -34,11 +33,6 @@ const router = new VueRouter({
             path: '/account',
             name: 'account',
             component: () => import('../views/Account.vue')
-        },
-        {
-            path: '/address',
-            name: 'address',
-            component: () => import('../views/Address.vue')
         },
         {
             path: '/help_center',

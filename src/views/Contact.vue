@@ -1,8 +1,8 @@
 <template>
   <div>
-    <mu-appbar style="position: fixed; top:0 ; left: 0; width: 100%;">
+    <mu-appbar style="position: fixed; top:0 ; left: 0; width: 100%;" color="#9c27b0">
       <mu-button icon type="button" class="back" @click="back()">
-        <mu-icon value="arrow_back" left color="black"></mu-icon>
+        <mu-icon value="arrow_back" left color="white"></mu-icon>
       </mu-button>
     </mu-appbar>
     <mu-container class="feedback">
@@ -12,7 +12,7 @@
                      full-width></mu-text-field>
       <br/>
     </mu-container>
-    <mu-button style="position: absolute; bottom: 54%; right: 10%" type="button" color="blue" @click="send()">
+    <mu-button style="position: absolute; bottom: 54%; right: 10%" type="button" color="#f50057" @click="send()">
       发送
       <mu-icon right value="send"></mu-icon>
     </mu-button>

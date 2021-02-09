@@ -5,7 +5,11 @@
         <mu-avatar :size="78">
           <img src="@/assets/logo.png" alt="">
         </mu-avatar>
-        <p>{{ message }}</p>
+        <div style="font-size: large; font-family: 'Microsoft YaHei',monospace; ">
+          <p>
+          {{ message }}
+          </p>
+        </div>
       </mu-chip>
       <mu-flex justify-content="center" style="position: fixed; top: 18%; right: 3%">
         <mu-button @click="openAlertDialog" round small color="#ef5350">注  销</mu-button>
@@ -16,12 +20,12 @@
         <mu-button slot="actions" flat color="primary" @click="logout">好</mu-button>
       </mu-dialog>
       <mu-list style="position: absolute;top: 25%;">
-        <mu-list-item button :ripple="true" to="address">
-          <mu-list-item-action>
-            <mu-icon value="location_on"></mu-icon>
-          </mu-list-item-action>
-          <mu-list-item-title>收货地址</mu-list-item-title>
-        </mu-list-item>
+<!--        <mu-list-item button :ripple="true" to="address">-->
+<!--          <mu-list-item-action>-->
+<!--            <mu-icon value="location_on"></mu-icon>-->
+<!--          </mu-list-item-action>-->
+<!--          <mu-list-item-title>收货地址</mu-list-item-title>-->
+<!--        </mu-list-item>-->
         <mu-list-item button :ripple="true" to="my_post">
           <mu-list-item-action>
             <mu-icon value="flight_takeoff"></mu-icon>
@@ -58,7 +62,6 @@ export default {
       localStorage.clear()
       this.openAlert = false
       location.reload()
-      // this.$store.commit('changeLogin',false)
     },
     openAlertDialog () {
       this.openAlert = true;
