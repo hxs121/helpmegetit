@@ -6,7 +6,7 @@
         <mu-icon value="arrow_back" left color="white"></mu-icon>
       </mu-button>
     </mu-appbar>
-    <mu-list textline="two-line" v-for="(item,index) in pageLists" :key="index">
+    <mu-list textline="two-line" v-for="(item,index) in pageLists" :key="index" style="position: fixed; top: 7%">
       <mu-list-item avatar :ripple="false">
         <mu-list-item-content>
           <mu-list-item-title>帮忙{{ item.problem }}</mu-list-item-title>

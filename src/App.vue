@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div>
     <transition name="fade">
       <router-view :key="$route.path"/>
     </transition>
