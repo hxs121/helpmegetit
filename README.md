@@ -1,6 +1,6 @@
 # helpmegetit这是一个校园代拿应用前端部分，正在完善
 ```
-使用vue+vuex+museui+dayjs
+使用vue+vuex+museui
 ```
 ## Project setup
 ```
