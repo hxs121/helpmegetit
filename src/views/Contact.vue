@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <mu-appbar style="position: fixed; top:0 ; left: 0; width: 100%;" color="#9c27b0">
-      <mu-button icon type="button" class="back" @click="back()">
+  <mu-paper :z-depth="1" class="demo-list-wrap">
+    <mu-appbar color="#9c27b0">
+      <mu-button icon type="button" class="back" @click="back()" style="position: fixed; top:1%;">
         <mu-icon value="arrow_back" left color="white"></mu-icon>
       </mu-button>
     </mu-appbar>
@@ -16,7 +16,7 @@
       发送
       <mu-icon right value="send"></mu-icon>
     </mu-button>
-  </div>
+  </mu-paper>
 </template>
 
 <script>
@@ -43,6 +43,10 @@ export default {
 </script>
 
 <style lang="scss">
+.demo-list-wrap {
+  width: 100%;
+  overflow: hidden;
+}
 .feedback {
   position: absolute;
   top: 15%;
