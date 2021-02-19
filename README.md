@@ -24,5 +24,7 @@ npm run serve
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 在线预览
+```
+http://114.215.209.136/
+```
