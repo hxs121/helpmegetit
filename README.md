@@ -2,15 +2,15 @@
 ```
 使用vue+vuex+museui
 ```
-## Project setup
+### Project setup
 ```
 npm install
 ```
-##Muse-ui安装
+###Muse-ui安装
 ```
 npm i muse-ui -S
 ```
-##dayjs安装
+###dayjs安装
 ```
 npm install dayjs
 ```
