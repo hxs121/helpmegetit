@@ -6,11 +6,11 @@
 ```
 npm install
 ```
-###Muse-ui安装
+### Muse-ui安装
 ```
 npm i muse-ui -S
 ```
-###dayjs安装
+### dayjs安装
 ```
 npm install dayjs
 ```
@@ -26,5 +26,5 @@ npm run build
 
 ### 在线预览
 ```
-http://114.215.209.136/
+<http://114.215.209.136/>
 ```
